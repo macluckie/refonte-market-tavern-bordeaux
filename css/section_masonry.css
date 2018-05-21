@@ -1,0 +1,359 @@
+@media (min-width:992px) {
+    .square-section .col-sm-12.article-list {
+        padding-left: 16px;
+        padding-right: 16px
+    }
+}
+
+@media (max-width:991px) {
+    .square-section .col-sm-12.article-list {
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:840px) {
+    .square-section .col-sm-12.article-list {
+        max-width: 768px;
+        margin: 0 auto
+    }
+}
+
+.square-section .big,
+.square-section .small {
+    width: 100%;
+    position: relative
+}
+
+@media screen and (min-width:991px) {
+
+  .square-section .big,
+  .square-section .small {
+      width: 50%;
+
+  }
+}
+
+
+.square-section .big>a,
+.square-section .small>a {
+    display: block;
+    position: relative
+}
+
+.square-section .big .art,
+.square-section .small .art {
+    display: block;
+    position: relative
+}
+
+.square-section .big .art img,
+.square-section .small .art img {
+    width: 100%;
+    display: block;
+}
+
+.square-section .big .content,
+.square-section .small .content {
+    position: relative;
+}
+
+.square-section .big .content .inner,
+.square-section .small .content .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.square-section .big .content .super-list,
+.square-section .small .content .super-list {
+    text-align: center;
+    display: inline-block;
+    color: #f9964f;
+    float: none;
+    padding: 0;
+    margin: 0;
+}
+
+.square-section .big .content .more,
+.square-section .small .content .more {
+    display: block;
+}
+
+.square-section .big .content .more:hover,
+.square-section .small .content .more:hover {
+    color: #f9964;
+
+}
+
+.square-section .big .content .more:after,
+.square-section .small .content .more:after {
+    margin-left: 4px!important
+}
+
+.square-section .big {
+    position: relative;
+}
+
+.square-section .big.big-left {
+    float: left;
+}
+
+.square-section .big.big-right {
+    float: right;
+}
+
+.square-section .big .art {
+    width: 100%;
+}
+
+.square-section .big .content {
+    -webkit-transition: opacity .75s ease-in-out;
+    transition: opacity .75s ease-in-out;
+    position: absolute;
+    background: rgba(35, 32, 32, .4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.square-section .big .content .more,
+.square-section .big .content h4 {
+    color: #fff;
+}
+
+.square-section .big:hover .art img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+}
+
+.square-section .big:hover .content {
+    opacity: 1;
+}
+
+.square-section .big .content .more:hover {
+    color: #fff;
+}
+
+.square-section .small>a .content {
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+    background-color: white;
+}
+
+.square-section .small>a .content .more,
+.square-section .small>a .content .super-list,
+.square-section .small>a .content h4 {
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+
+.square-section .small>a:hover .art img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.square-section .small>a:hover .art:after {
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+
+}
+
+.square-section .small>a:hover .content .more {
+    color: #f9964f;
+}
+
+.square-section .small>a:hover .content {
+    background: #334524;
+}
+
+.square-section .small>a:hover .content .more,
+.square-section .small>a:hover .content .super-list,
+.square-section .small>a:hover .content h4 {
+    color: #fff;
+}
+
+.square-section .small.small-left {
+    float: left;
+}
+
+.square-section .small.small-right {
+    float: right;
+}
+
+.square-section .small.img-left .art {
+    float: left;
+}
+
+.square-section .small.img-left .art:after {
+    border-right: 22px solid #fff;
+    right: 0;
+}
+
+.square-section .small.img-left .art img {
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.square-section .small.img-left .content {
+    float: right;
+}
+
+/* couleur flèche vers la gauche */
+.square-section .small.img-left>a:hover .art:after {
+    border-right-width: 26px;
+    border-right-color: #334524;
+}
+
+.square-section .small.img-right .art {
+    float: right;
+}
+
+.square-section .small.img-right .art:after {
+    border-left: 22px solid #fff;
+    left: 0;
+}
+
+.square-section .small.img-right .art img {
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+}
+
+.square-section .small.img-right .content {
+    float: left;
+}
+
+
+/* couleur des flèches vers la droite */
+
+.square-section .small.img-right>a:hover .art:after {
+    border-left-width: 26px;
+    border-left-color: #334524;
+}
+
+.square-section .small .art {
+    width: 50%;
+}
+
+.square-section .small .art:after {
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.square-section .small .content {
+    width: 50%;
+    position: relative
+}
+
+.square-section .small .content:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%
+}
+
+.art img {
+-webkit-transition: all 2s ease-in-out;
+transition: all 2s ease-in-out;
+-webkit-transform: scale(1.01);
+transform: scale(1.01);
+width: 100%;
+	display: block; }
+
+
+
+ html.no-touch .scroll-pop.popped.fade-in, html.no-touch .scroll-pop.popped.sail-away {
+-webkit-animation-name: fade_in;
+animation-name: fade_in;
+-webkit-animation-duration: .75s;
+animation-duration: .75s;
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+html.no-touch article.scroll-pop.popped {
+-webkit-animation-name: fade_in;
+animation-name: fade_in;
+-webkit-animation-duration: .4s;
+animation-duration: .4s;
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+html.no-touch article.scroll-pop {
+opacity: 0;
+}
+html.no-touch .scroll-pop {
+position: relative;
+opacity: 0;
+}
+html.no-touch article.scroll-pop.popped.fade-in .art {
+-webkit-animation-name: none;
+animation-name: none;
+-webkit-animation-duration: 0s;
+animation-duration: 0s;
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+
+html.no-touch article.scroll-pop.popped .art {
+-webkit-animation-name: scale_pop;
+animation-name: scale_pop;
+-webkit-animation-duration: .4s;
+animation-duration: .4s;
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+html.no-touch article.scroll-pop.fade-in .art {
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+html.no-touch article.scroll-pop .art {
+-webkit-transform: scale(.9) translate3d(0,50px,0);
+transform: scale(.9) translate3d(0,50px,0);
+}
+.art {
+display: block;
+overflow: hidden;
+position: relative;
+}
+
+#LiveSports .container .row div article a .article-content .inner ul li{
+	list-style-type: none;
+}
+
+h4{
+	font-size: 1.8rem;
+    color: #333;
+}

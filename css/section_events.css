@@ -1,0 +1,4 @@
+/* CSS for the "events" section */
+section#Events .row:nth-child(2) {
+	margin-bottom: 6rem;
+}

@@ -1,0 +1,92 @@
+#foodnDrink .thumbnail {
+	margin: 1rem;
+	padding: 0;
+	border-radius: 0;
+
+	background-color: transparent;
+	border: none;
+
+	overflow: hidden;
+
+	/* for positionning the .popper elements */
+	position: relative;
+}
+
+#foodnDrink .modal-header{
+	text-align: center;
+	font-size: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 0;
+}
+
+
+#foodnDrink .opacifier {
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+
+	background-color: rgba( 0,0,0, 0.7 );
+}
+
+
+#foodnDrink .popper {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 2;
+
+	padding: 4% 8%;
+	margin: 0;
+	
+	font-family: 'PT Sans Caption', sans-serif;
+	color: white;
+}
+
+/* the "hover" media query is not recognised under today's firefox ...
+Sorry, I'm using an ugly approximation. I DID IT UNDER THE THREAT OF
+ ESTELLE, I'LL NEVER DO SOMETHING AS UGLY AS TESTING DEVICE WIDTH WHEN
+  I WANT SOMETHING TOTALLY DIFFERENT AS ":hover" SUPPORT  BY MYSELF*/
+@media screen and (min-width: 768px),
+ 		screen and (hover: hover) {
+
+	#foodnDrink .popper {
+		transform: translateX(-100%);
+		transition: transform 0.3s;
+	}
+	#foodnDrink .thumbnail:hover .popper {
+		transform: none;
+	}
+
+	#foodnDrink .opacifier {
+		transition: background-color 0.3s;
+		background-color: transparent;
+	}
+	#foodnDrink .thumbnail:hover .opacifier {
+		background-color: rgba( 0,0,0, 0.7 );
+	}
+
+}
+
+
+/* avoid overflow problems with these buttons */
+#foodnDrink .popper .button {
+	font-size: 1.5rem;
+	padding: 1rem 3rem;
+	margin: 1rem;
+}
+
+@media screen and (min-width: 991px) {
+	#foodnDrink .popper .button {
+		margin: 2rem;
+	}
+}
+	
+
+@media screen and (max-width: 991px) {
+	#foodnDrink .popper {
+		font-size: 1.2rem;
+	}
+}

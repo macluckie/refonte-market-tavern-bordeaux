@@ -1,0 +1,119 @@
+
+/* CSS commun à toutes les sections */
+html { font-size: 62.5%; } /* 1rem vaut 10px */
+
+body {
+	font-family: 'PT Sans Caption', sans-serif;
+    font-size: 1.6em;
+}
+
+h2 {
+	font-family: 'Yeseva One', cursive;
+    font-size: 3.5em;
+	margin-bottom: 6rem;
+}
+
+section:not(#Contact):not(#banner) {
+	padding: 4em 0;
+}
+
+a:focus, a:hover {
+    color: white;
+}
+
+.background__dark-green {
+	background-color: #22301e;
+	color: white;
+}
+.background__light-green {
+	background-color: #334524;
+	color: white;
+}
+.background__dark-blue {
+	background-color: #21212d;
+	color: white;
+}
+.background__light-blue {
+	background-color: #45655b;
+	color: white;
+}
+.background__dark-pink {
+	background-color: #3c0717;
+	color: white;
+}
+.background__light-pink {
+	background-color: #730c25;
+	color: white;
+}
+
+/* button */
+.button {
+    border: none;
+    padding: 1.7rem 7rem;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    position: relative;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    overflow: hidden;
+    color: white;
+}
+.button:after {
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: transparent
+}
+.button:hover::after {
+    z-index: 2;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.15)
+}
+
+.button__light-pink {
+	background-color: #730c25;
+}
+
+.button__light-green {
+	background-color: #334524;
+}
+
+.button__dark-blue {
+	background-color: #21212d;
+}
+
+a.button:hover, a.button:focus, a.button:active{
+	text-decoration: none;
+}
+
+.button--center {
+	display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.button--reservation a {
+    padding: 0.5rem 1rem;
+    color: white !important;
+    display: block;
+    font-weight: 600;
+}

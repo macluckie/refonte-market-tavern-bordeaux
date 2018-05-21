@@ -1,0 +1,131 @@
+/* the main title on top of page */
+#primary-column .font-title {
+	font-family: 'Yeseva One', serif;
+    color: black;
+}
+
+
+#primary-column .mainTitle {
+	display: inline-block !important;
+    position: relative;
+	text-align: center;
+
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+	margin: 0.3rem auto;
+    padding: 0;
+    padding-top: 0.5rem;
+
+    font-size: 2rem;
+
+}
+
+#primary-column .mainTitle p {
+	margin-bottom: 0;
+	padding: 0;
+}
+
+
+/* the half-elevated «THE» into the main title */
+#primary-column .mini {
+    position: absolute;
+    background-color: white;
+
+    font-size: 1.5rem;
+
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#primary-column .headPig {
+    max-width: 50px;
+    margin-right: 50px;
+}
+/* Make the pig not hover on the navbar */
+@media(max-width: 848px) {
+    #primary-column .headPig { display: none }
+}
+
+
+
+/* navbar styling */
+
+#primary-column .navbar-default {
+	background-color: white;
+	
+	width: 100%;
+
+	border: none;
+	box-shadow: 0 2px 5px rgba(100, 100, 100, .1);
+}
+
+
+#primary-column ul {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+	#primary-column ul {
+justify-content: space-between;
+    flex-direction: row;
+}
+
+}
+
+nav.primary ul > li > a {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 1rem;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+/* banner styling */
+
+#banner {
+    position: relative;
+    margin-top: 54px;
+}
+
+@media (min-width: 768px) {
+    #banner {
+        margin-top: 0;
+    }
+}
+@media (min-width: 768px) {
+
+    /* used to contain the moving img */
+    #banner .limiter {
+        overflow: hidden;
+    }
+
+    #banner .oscillating {
+        animation: oscillator 20s alternate linear infinite both;
+    }
+
+    @keyframes oscillator {
+        from { transform: scale(1) }
+        to { transform: scale(1.1) }
+    }
+}
+
+
+#banner .surimpressedOnParent {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate( -50%, 50% );
+
+	margin-left: auto;
+	margin-right: auto;
+
+	max-height: 40%;
+}
+
